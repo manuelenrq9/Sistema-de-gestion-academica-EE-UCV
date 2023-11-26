@@ -54,7 +54,7 @@
     <div class="container">
         <h1>SISGEA EEUCV</h1>
         <h2>Estudiante nuevo ingreso</h2>
-        <form id="studentForm">
+        <form id="studentForm" method="post" action="{% url 'insert_student' %}">
             <!-- Form fields -->
             <div>
                 <label for="NOMBRE">Nombre y Apellido:</label>
@@ -83,7 +83,7 @@
             </div>
             <div>
                 <label for="CORREO">Email</label>
-                <input type="email" name="" id="email" placeholder="pedroperez@gmail.com" required onclick="validarEmail(form.correo.value)"> <br> 
+                <input type="email" name="CORREO" id="CORREO" placeholder="pedroperez@gmail.com" required onclick="validarEmail(form.correo.value)"> <br> 
                 <br>
             </div>
             <div>
